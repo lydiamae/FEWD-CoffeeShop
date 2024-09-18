@@ -81,6 +81,24 @@ menu > p {
     padding: 0 0 3rem 0;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #233237;
+    color: white;
+}
+
+footer p {
+    padding: 0 0 0 0;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 0.4rem 0 0 0;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Quantico';
     text-transform: uppercase; 
@@ -144,12 +162,19 @@ button {
 .item-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: 'Quantico';
     font-size: 1.6rem;
 }
 
+/* .footer-item {
+    
+} */
+
 /* larger devices */
 @media only screen and (min-width: 768px) {
-
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
 }
