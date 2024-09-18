@@ -1,6 +1,7 @@
 :root {
     --coffee-brown: #45230F;
     --bg-green: #233237;
+    --bg-light: #d4e2e1;
 }
 
 @font-face {
@@ -21,7 +22,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(204, 230, 235);
+    background-color: var(--bg-light);
 }
 
 html, p, span {
@@ -38,9 +39,21 @@ main {
 
 header {
     color: var(--coffee-brown);
-    background-color: antiquewhite;
+    background-color: var(--bg-light);
     height: 6rem;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav div {
+    width: 80px;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
 }
 
 section {
@@ -48,7 +61,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     background-color: var(--bg-green);
     width: 100%;
     color: white;
@@ -96,12 +108,14 @@ footer p {
 
 footer li {
     list-style-type: none;
-    padding: 0.4rem 0 0 0;
+    padding: 0.3rem 0 0 0;
+    margin: 1rem;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Quantico';
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    padding: 1rem; 
 }
 
 h1 {
@@ -113,7 +127,8 @@ h2 {
 }
 
 p {
-    padding: 0 3rem 0 3rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    margin: 1rem;
 }
 
 button {
@@ -173,6 +188,16 @@ button {
 
 /* larger devices */
 @media only screen and (min-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav img {
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    
     footer {
         display: flex;
         flex-direction: row;
