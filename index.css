@@ -1,0 +1,155 @@
+:root {
+    --coffee-brown: #45230F;
+    --bg-green: #233237;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Quantico';
+    src: url(/assets/fonts/Quantico/Quantico-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 230, 235);
+}
+
+html, p, span {
+    font-family: 'Open Sans';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    color: var(--coffee-brown);
+    background-color: antiquewhite;
+    height: 6rem;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-green);
+    width: 100%;
+    color: white;
+}
+
+section > menu, menu * {
+    color: var(--coffee-brown);
+    background-color: antiquewhite;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+menu ul {
+    width: 90%;
+    text-align: left;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+menu p {
+    padding: 0 0 0 0;
+}
+
+menu > p {
+    padding: 0 0 3rem 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Quantico';
+    text-transform: uppercase; 
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+p {
+    padding: 0 3rem 0 3rem;
+}
+
+button {
+    background-color: var(--coffee-brown);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    width: 40%;
+    min-width: 270px;
+    max-width: 440px;
+    padding: 1rem;
+    font-family: 'Quantico';
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 2rem 0 0 0;
+}
+
+.hero {
+    background-image: url(/assets/photos/coffee-hero-bg.jpg);
+    min-height: 500px;
+    width: 100%;
+    padding: 3rem 0 3rem 0;
+}
+
+.hero > h1, .hero > p {
+    color: var(--coffee-brown);
+}
+
+.beans {
+    background-image: url(/assets/photos/coffee-beans-bg.jpg);
+    min-height: 400px;
+    width: 100%;
+    background-color: var(--coffee-brown);
+}
+
+.beans * {
+    color: white;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+.item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Quantico';
+    font-size: 1.6rem;
+}
+
+/* larger devices */
+@media only screen and (min-width: 768px) {
+
+}
